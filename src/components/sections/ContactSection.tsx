@@ -34,19 +34,19 @@ export const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex@developer.com",
-      href: "mailto:alex@developer.com",
+      value: "kaveensmart28@gmail.com",
+      href: "mailto:kaveensmart28@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 7010422107",
+      href: "tel:+917010422107",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Tamil Nadu, India",
       href: "#",
     },
   ];

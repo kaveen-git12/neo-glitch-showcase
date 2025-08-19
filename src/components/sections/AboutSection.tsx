@@ -44,7 +44,7 @@ export const AboutSection = () => {
                   </div>
                 </FloatingIcon>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Alex Developer</h3>
+                  <h3 className="text-2xl font-bold text-foreground">Kaveen S</h3>
                   <p className="text-muted-foreground">Full Stack Developer</p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export const AboutSection = () => {
                   // Create a temporary link to download resume
                   const link = document.createElement('a');
                   link.href = '/resume.pdf'; // You would put your actual resume here
-                  link.download = 'Alex_Developer_Resume.pdf';
+                  link.download = 'Kaveen_S_Resume.pdf';
                   link.click();
                 }}
               >

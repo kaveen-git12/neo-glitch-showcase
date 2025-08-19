@@ -16,19 +16,19 @@
     --popover: 222 47% 6%;
     --popover-foreground: 200 100% 95%;
 
-    /* Neon Cyan Primary */
-    --primary: 195 100% 55%;
+    /* Dark Pink Primary */
+    --primary: 320 85% 60%;
     --primary-foreground: 222 47% 4%;
 
-    /* Electric Purple Secondary */
+    /* Violet Secondary */
     --secondary: 263 85% 65%;
     --secondary-foreground: 200 100% 95%;
 
     --muted: 222 47% 8%;
     --muted-foreground: 200 20% 65%;
 
-    /* Neon Teal Accent */
-    --accent: 171 100% 45%;
+    /* Dark Pink Accent */
+    --accent: 320 85% 60%;
     --accent-foreground: 222 47% 4%;
 
     --destructive: 0 84% 60%;
@@ -36,27 +36,27 @@
 
     --border: 222 47% 12%;
     --input: 222 47% 10%;
-    --ring: 195 100% 55%;
+    --ring: 320 85% 60%;
 
     --radius: 0.75rem;
 
     /* Cyberpunk specific colors */
-    --neon-blue: 195 100% 55%;
+    --neon-pink: 320 85% 60%;
     --neon-purple: 263 85% 65%;
-    --neon-teal: 171 100% 45%;
-    --neon-pink: 318 100% 65%;
+    --neon-violet: 280 85% 70%;
+    --neon-dark-pink: 315 90% 55%;
     --dark-bg: 222 47% 4%;
     --darker-bg: 222 47% 2%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--neon-blue)), hsl(var(--neon-purple)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--neon-purple)), hsl(var(--neon-teal)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--neon-pink)), hsl(var(--neon-purple)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--neon-purple)), hsl(var(--neon-violet)));
     --gradient-bg: linear-gradient(135deg, hsl(var(--dark-bg)), hsl(var(--darker-bg)));
 
     /* Glows and Effects */
-    --glow-blue: 0 0 20px hsl(var(--neon-blue) / 0.5);
+    --glow-pink: 0 0 20px hsl(var(--neon-pink) / 0.5);
     --glow-purple: 0 0 20px hsl(var(--neon-purple) / 0.5);
-    --glow-teal: 0 0 20px hsl(var(--neon-teal) / 0.5);
+    --glow-violet: 0 0 20px hsl(var(--neon-violet) / 0.5);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,19 +71,19 @@
     --card-foreground: 200 100% 95%;
     --popover: 222 47% 6%;
     --popover-foreground: 200 100% 95%;
-    --primary: 195 100% 55%;
+    --primary: 320 85% 60%;
     --primary-foreground: 222 47% 4%;
     --secondary: 263 85% 65%;
     --secondary-foreground: 200 100% 95%;
     --muted: 222 47% 8%;
     --muted-foreground: 200 20% 65%;
-    --accent: 171 100% 45%;
+    --accent: 320 85% 60%;
     --accent-foreground: 222 47% 4%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 200 100% 95%;
     --border: 222 47% 12%;
     --input: 222 47% 10%;
-    --ring: 195 100% 55%;
+    --ring: 320 85% 60%;
   }
 }
 
@@ -108,37 +108,37 @@
   .btn-neon {
     @apply bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-lg;
     @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
-    box-shadow: var(--glow-blue);
+    box-shadow: var(--glow-pink);
     animation: pulse-glow 2s ease-in-out infinite alternate;
   }
 
   .btn-hero {
     @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground px-8 py-4 rounded-xl;
     @apply hover:scale-105 transition-all duration-300 font-semibold;
-    box-shadow: var(--glow-blue), var(--glow-purple);
+    box-shadow: var(--glow-pink), var(--glow-purple);
   }
 
   .btn-ghost-neon {
     @apply bg-transparent border border-accent text-accent px-4 py-2 rounded-lg;
     @apply hover:bg-accent hover:text-accent-foreground transition-all duration-300;
-    box-shadow: var(--glow-teal);
+    box-shadow: var(--glow-violet);
   }
 
   /* Cyberpunk Card Variants */
   .card-neon {
     @apply bg-card/50 backdrop-blur-sm border border-primary/30 rounded-xl p-6;
-    box-shadow: var(--glow-blue), inset 0 1px 0 hsl(var(--primary) / 0.1);
+    box-shadow: var(--glow-pink), inset 0 1px 0 hsl(var(--primary) / 0.1);
   }
 
   .card-glow {
     @apply bg-card/80 backdrop-blur-md border border-accent/50 rounded-xl p-6;
-    box-shadow: var(--glow-teal), 0 25px 50px -12px hsl(var(--dark-bg) / 0.8);
+    box-shadow: var(--glow-violet), 0 25px 50px -12px hsl(var(--dark-bg) / 0.8);
   }
 
   /* Text Effects */
   .text-neon {
-    color: hsl(var(--neon-blue));
-    text-shadow: var(--glow-blue);
+    color: hsl(var(--neon-pink));
+    text-shadow: var(--glow-pink);
   }
 
   .text-gradient {
@@ -159,8 +159,8 @@
 @layer utilities {
   /* Glow animations */
   @keyframes pulse-glow {
-    0% { box-shadow: var(--glow-blue); }
-    100% { box-shadow: var(--glow-blue), var(--glow-purple); }
+    0% { box-shadow: var(--glow-pink); }
+    100% { box-shadow: var(--glow-pink), var(--glow-purple); }
   }
 
   @keyframes gradient-shift {
@@ -175,7 +175,7 @@
   }
 
   @keyframes spin-glow {
-    from { transform: rotate(0deg); box-shadow: var(--glow-blue); }
+    from { transform: rotate(0deg); box-shadow: var(--glow-pink); }
     to { transform: rotate(360deg); box-shadow: var(--glow-purple); }
   }
 
