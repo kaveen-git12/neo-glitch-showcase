@@ -52,15 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Cyberpunk color palette
+				neon: {
+					blue: 'hsl(var(--neon-blue))',
+					purple: 'hsl(var(--neon-purple))',
+					teal: 'hsl(var(--neon-teal))',
+					pink: 'hsl(var(--neon-pink))'
+				},
+				dark: {
+					bg: 'hsl(var(--dark-bg))',
+					'bg-darker': 'hsl(var(--darker-bg))'
 				}
 			},
 			borderRadius: {
