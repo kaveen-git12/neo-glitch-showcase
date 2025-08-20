@@ -35,7 +35,7 @@ export const ContactSection = () => {
       icon: Mail,
       label: "Email",
       value: "kaveensmart28@gmail.com",
-      href: "https://mail.google.com/mail/?view=cm&fs=1&to=kaveensmart28@gmail.com",
+      href: "mailto:kaveensmart28@gmail.com",
     },
     {
       icon: Phone,
