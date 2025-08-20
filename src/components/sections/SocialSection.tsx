@@ -17,21 +17,21 @@ export const SocialSection = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com",
+      url: "https://github.com/kaveen-git12",
       color: "text-foreground",
       description: "Check out my repositories"
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/kaveen-s-1aa14637a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       color: "text-neon-blue",
       description: "Professional network"
     },
     {
       name: "Twitter",
       icon: Twitter,
-      url: "https://twitter.com",
+      url: "https://x.com/10BGAMING?t=6jXErfiUPX-3OdogP3MxEg&s=09",
       color: "text-neon-teal",
       description: "Latest updates & thoughts"
     },
