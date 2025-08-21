@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 px-4 relative">
+    <section id="projects" className="py-12 md:py-20 px-4 md:px-6 lg:px-8 relative w-full">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -80,7 +80,7 @@ export const ProjectsSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
         >
           {projects.map((project, index) => (
             <motion.div
@@ -115,11 +115,11 @@ export const ProjectsSection = () => {
                 </div>
 
                 {/* Project content */}
-                <div className="p-6 space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground group-hover:text-gradient transition-colors">
+                <div className="p-4 md:p-6 space-y-3 md:space-y-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gradient transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                     {project.description}
                   </p>
                   
@@ -136,7 +136,7 @@ export const ProjectsSection = () => {
                   </div>
 
                   {/* Project links */}
-                  <div className="flex space-x-4 pt-4">
+                  <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 pt-3 md:pt-4">
                     <Button variant="neon" size="sm" className="flex-1">
                       <Github className="w-4 h-4 mr-2" />
                       View Code

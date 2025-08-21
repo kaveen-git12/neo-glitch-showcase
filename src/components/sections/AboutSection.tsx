@@ -12,8 +12,8 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="py-12 md:py-20 px-4 md:px-6 lg:px-8 relative w-full">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,11 +23,11 @@ export const AboutSection = () => {
         >
           <AnimatedText
             text="About Me"
-            className="text-4xl md:text-6xl font-bold text-gradient mb-8"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold text-gradient mb-6 md:mb-8"
           />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Profile section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -36,25 +36,25 @@ export const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            <div className="card-neon p-8 space-y-6">
-              <div className="flex items-center space-x-4 mb-6">
+            <div className="card-neon p-6 md:p-8 space-y-4 md:space-y-6">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 mb-4 md:mb-6">
                 <FloatingIcon>
-                  <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                    <User className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                    <User className="w-6 h-6 md:w-8 md:h-8 text-primary-foreground" />
                   </div>
                 </FloatingIcon>
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground">Kaveen S</h3>
-                  <p className="text-muted-foreground">Full Stack Developer</p>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground">Kaveen S</h3>
+                  <p className="text-sm md:text-base text-muted-foreground">Full Stack Developer</p>
                 </div>
               </div>
 
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Passionate developer with 5+ years of experience creating innovative web applications. 
                 I specialize in React, Node.js, and modern frameworks to deliver exceptional user experiences.
               </p>
 
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
                 or sharing knowledge with the developer community.
               </p>

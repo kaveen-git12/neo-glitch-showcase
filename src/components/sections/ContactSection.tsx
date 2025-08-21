@@ -52,8 +52,8 @@ export const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="py-12 md:py-20 px-4 md:px-6 lg:px-8 relative w-full">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           {/* Contact form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -78,10 +78,10 @@ export const ContactSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="card-neon p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+            <div className="card-neon p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 md:mb-6">Send a Message</h3>
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -178,9 +178,9 @@ export const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-8"
           >
-            <div className="card-glow p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
+            <div className="card-glow p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 md:mb-6">Get in Touch</h3>
+              <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 I'm always excited to discuss new opportunities and interesting projects. 
                 Feel free to reach out through any of the channels below.
               </p>

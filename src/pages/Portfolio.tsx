@@ -7,9 +7,9 @@ import { AnimatedBackground } from "@/components/AnimatedBackground";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden relative">
+    <div className="min-h-screen w-full bg-background overflow-x-hidden relative">
       <AnimatedBackground />
-      <div className="relative z-10">
+      <div className="relative z-10 w-full">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
@@ -18,9 +18,9 @@ const Portfolio = () => {
       </div>
       
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border/50 bg-card/30 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground">
+      <footer className="py-4 md:py-8 px-4 md:px-6 border-t border-border/50 bg-card/30 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-sm md:text-base text-muted-foreground">
             © 2024 Kaveen S. Built with React, Framer Motion & modern web technologies.
           </p>
         </div>
