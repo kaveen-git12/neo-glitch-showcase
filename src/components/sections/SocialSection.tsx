@@ -38,7 +38,7 @@ export const SocialSection = () => {
     {
       name: "Instagram",
       icon: Instagram,
-      url: "https://instagram.com",
+      url: "https://instagram.com/kaveen_10b",
       color: "text-neon-pink",
       description: "Behind the scenes"
     },
